@@ -8,6 +8,9 @@ class App:
         logging.basicConfig(level=logging.DEBUG)
         logger = logging.getLogger(__name__)
         logger.debug("app start")
+
+        args = Arguments()
+
         db_memory = Data(db_type="inmemory", db_name="inmemory.db")
         db_memory.get_data()
         db_memory.get_data()
